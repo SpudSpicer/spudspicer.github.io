@@ -1789,6 +1789,7 @@ input, select, textarea {
 	ul.links {
 		list-style: none;
 		padding-left: 0;
+		text-align: center;
 	}
 
 		ul.links li {
@@ -1923,6 +1924,7 @@ input, select, textarea {
 		overflow: hidden;
 		cursor: default;
 		margin: 0 0 3.25em 0;
+		text-align: center;
 	}
 
 		ul.social li {

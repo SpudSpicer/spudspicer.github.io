@@ -15,12 +15,19 @@
 
     <!-- Banner -->
     <section id="banner">
-        <br><br><br>
-        <img src="images/biglogo.png" alt="" title="">
+        <br>
+        <br>
+        {%- if page.banner_image -%}
+            <img src="{{ page.banner_image }}" alt="" title="">
+        {%- endif -%}
         <div>
             <header>
-                <h2>WE ARE SPUD SPICER</h2>
-                <p>WE MAKE GAMES</p>
+                {%- if page.title -%}
+                    <h2>{{ page.title }}</h2>
+                {%- endif %}
+                {%- if page.subheading -%}
+                    <p>{{ page.subheading }}</p>
+                {%- endif %}
             </header>
         </div>
     </section>

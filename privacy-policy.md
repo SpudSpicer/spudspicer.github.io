@@ -2,7 +2,6 @@
 layout: page
 title: Privacy Policy
 permalink: /privacy-policy/
-banner_image: http://placehold.it/1920x256
 ---
 
 ## Privacy Policy
