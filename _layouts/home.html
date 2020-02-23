@@ -2,6 +2,22 @@
 layout: default
 ---
 
+{%- include home-header.html -%}
+
+{%- if page.banner_image -%}
+<!-- Banner -->
+<section id="banner">
+    <br><br><br>
+    <img src="{{ page.banner_image }}" alt="" title="">
+    <div>
+        <header>
+            <h2>WE ARE SPUD SPICER</h2>
+            <p>WE MAKE GAMES</p>
+        </header>
+    </div>
+</section>
+{%- endif -%}
+
 <!-- Main -->
 <section id="main">
     <div class="container">
@@ -12,7 +28,7 @@ layout: default
                         <header class="major">
                             <h1 id="about">ABOUT</h1>
                         </header>
-                        <p>SpudSpicer was founded by Ryan (Spud) Murphy and Jared (Spicer) in 2018.</p>
+                        <p>Spud Spicer was founded by Ryan (Spud) Murphy and Jared (Spicer) in 2018.</p>
                     </section>
                 </section>
                 <section>
@@ -22,7 +38,7 @@ layout: default
                     <div class="row">
                         <div class="col-6 col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+                                <a href="#" class="image featured"><img src="/images/pic08.jpg" alt="" /></a>
                                 <header>
                                     <h1>RYAN MURPHY</h1>
                                     <p>CODE</p>
@@ -30,14 +46,14 @@ layout: default
                                 <p>Ryan writes code. He makes the games work. Just wait till you see his latest creations! We hope you are as excited as we are.</p>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="http://www.ryanmurphy.com" class="button icon solid fa-file-alt">WEBSITE</a></li>
+                                        <li><a target="_blank" href="http://www.ryanscottmurphy.com" class="button icon solid fa-file-alt">WEBSITE</a></li>
                                     </ul>
                                 </footer>
                             </section>
                         </div>
                         <div class="col-6 col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+                                <a href="#" class="image featured"><img src="/images/pic09.jpg" alt="" /></a>
                                 <header>
                                     <h1>JARED SPICER</h1>
                                     <p>ART</p>
@@ -45,7 +61,7 @@ layout: default
                                 <p>Jared loves to create fun and exciting designs. With SpudSpicer you get to play with these creations. We know you will love them too!</p>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="http://www.jaredspicer.com" class="button icon solid fa-file-alt">WEBSITE</a></li>
+                                        <li><a target="_blank" href="http://www.jaredspicer.com" class="button icon solid fa-file-alt">WEBSITE</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -64,21 +80,30 @@ layout: default
                     <div class="row">
                         <div class="col-6 col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                                <div class="image featured"><img src="/images/pic02.jpg" alt="" /></div>
                                 <header>
                                     <h3>SCOOPY CEREAL</h3>
                                 </header>
-                                <p>Have a taste of SpudSpicer's first creation. Scoopy Cereal is a hilariously delicious game of timing and coordination. With many tasty cereals to unlock, you won't be able to resist trying them all!</p>
-
+                                <p>Have a taste of Spud Spicer's first creation. Scoopy Cereal is a hilariously delicious game of timing and coordination. With many tasty cereals to unlock, you won't be able to resist trying them all!</p>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="/scoopy-cereal/" class="button icon solid">Find out more</a></li>
+                                    </ul>
+                                </footer>
                             </section>
                         </div>
                         <div class="col-6 col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                                <a href="#" class="image featured"><img src="/images/pic03.jpg" alt="" /></a>
                                 <header>
                                     <h3>COMING SOON...</h3>
                                 </header>
-                                <p>SpudSpicer are always cooking up something new. Keep an eye out for a tasty morsel of what's to come from the team that brought you the most delicious treat the App store has ever seen.</p>
+                                <p>Spud Spicer are always cooking up something new. Keep an eye out for a tasty morsel of what's to come from the team that brought you the most delicious treat the App store has ever seen.</p>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a class="button icon alt">Coming soon</a></li>
+                                    </ul>
+                                </footer>
                             </section>
                         </div>
                     </div>
@@ -95,18 +120,18 @@ layout: default
             <div class="col-4 col-12-medium">
                 <section class="first">
 
-                    <img src="images/icon_email.png" alt="" title="">
+                    <img src="/images/icon_email.png" alt="" title="">
                     <header>
                         <h2>WANT TO CHAT?</h2>
                     </header>
                     <ul class="actions">
-                        <li><a href="http://www.jaredspicer.com" class="button">EMAIL US</a></li>
+                        <li><a href="mailto:developer@spudspicer.com" class="button">EMAIL US</a></li>
                     </ul>
                 </section>
             </div>
             <div class="col-4 col-12-medium">
                 <section class="middle">
-                    <img src="images/icon_email.png" alt="" title="">
+                    <img src="/images/icon_email.png" alt="" title="">
                     <header>
                         <h2>PRESSKIT</h2>
                     </header>
@@ -117,12 +142,12 @@ layout: default
             </div>
             <div class="col-4 col-12-medium">
                 <section class="last">
-                    <img src="images/icon_email.png" alt="" title="">
+                    <img src="/images/icon_email.png" alt="" title="">
                     <header>
                         <h2>NEED HELP?</h2>
                     </header>
                     <ul class="actions">
-                        <li><a href="http://www.jaredspicer.com" class="button">EMAIL SUPPORT</a></li>
+                        <li><a href="mailto:developer@spudspicer.com" class="button">EMAIL SUPPORT</a></li>
                     </ul>
                 </section>
             </div>

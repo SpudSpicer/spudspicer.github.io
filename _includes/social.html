@@ -1,0 +1,34 @@
+<ul class="social">
+    {%- if site.facebook_username -%}
+        <li>
+            <a class="icon brands fa-facebook-f" target="_blank" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" title="{{ site.facebook_username| escape }} on Facebook">
+                <span class="label">{{ site.facebook_username| escape }} on Facebook</span>
+            </a>
+        </li>
+    {%- endif -%}
+
+    {%- if site.twitter_username -%}
+        <li>
+            <a class="icon brands fa-twitter" target="_blank" href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}" title="{{ site.twitter_username| escape }} on Twitter">
+                <span class="label">{{ site.twitter_username| escape }} on Twitter</span>
+            </a>
+        </li>
+    {%- endif -%}
+
+    {%- if site.youtube_username -%}
+        <li>
+            <a class="icon brands fa-youtube" target="_blank" href="https://www.youtube.com/{{ site.youtube_username| cgi_escape | escape }}" title="{{ site.youtube_username| escape }} on Youtube">
+                <span class="label">{{ site.youtube_username| escape }} on Youtube</span>
+            </a>
+        </li>
+    {%- endif -%}
+
+    {%- if site.instagram_username -%}
+        <li>
+            <a class="icon brands fa-instagram" target="_blank" href="https://www.youtube.com/{{ site.instagram_username| cgi_escape | escape }}" title="{{ site.instagram_username| escape }} on Instagram">
+                <span class="label">{{ site.instagram_username| escape }} on Instagram</span>
+            </a>
+        </li>
+    {%- endif -%}
+
+</ul>
