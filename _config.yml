@@ -34,6 +34,8 @@ instagram_username: ryanscottmurphy
 collections:
   staff_members:
     sort_by: feature_order
+  games:
+    sort_by: feature_order
 
 google_analytics: UA-158824178-1
 disqus:

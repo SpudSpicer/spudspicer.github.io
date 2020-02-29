@@ -8,14 +8,16 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <section id="main" class="container">
-                    <section class="first">
-                        <header class="major">
-                            <h1 id="about">ABOUT</h1>
-                        </header>
+
+                <section>
+                    <header class="major">
+                        <h1 id="about">ABOUT</h1>
+                    </header>
+                    <div>
                         <p>Spud Spicer was founded by Ryan (Spud) Murphy and Jared (Spicer) in 2018.</p>
-                    </section>
+                    </div>
                 </section>
+
                 <section>
                     <header class="major">
                         <h1 id="team">TEAM</h1>
@@ -31,48 +33,22 @@ layout: default
                     </div>
                 </section>
 
-            </div>
-            <div class="col-12">
-
-                <!-- Portfolio -->
                 <section>
                     <header class="major">
                         <h1 id="games">GAMES</h1>
                     </header>
                     <div class="row">
-                        <div class="col-6 col-12-small">
-                            <section class="box">
-                                <div class="image featured"><img src="/images/pic02.jpg" alt="" /></div>
-                                <header>
-                                    <h3>SCOOPY CEREAL</h3>
-                                </header>
-                                <p>Have a taste of Spud Spicer's first creation. Scoopy Cereal is a hilariously delicious game of timing and coordination. With many tasty cereals to unlock, you won't be able to resist trying them all!</p>
-                                <footer>
-                                    <ul class="actions">
-                                        <li><a href="/scoopy-cereal/" class="button icon solid">Find out more</a></li>
-                                    </ul>
-                                </footer>
-                            </section>
-                        </div>
-                        <div class="col-6 col-12-small">
-                            <section class="box">
-                                <a href="#" class="image featured"><img src="/images/pic03.jpg" alt="" /></a>
-                                <header>
-                                    <h3>COMING SOON...</h3>
-                                </header>
-                                <p>Spud Spicer are always cooking up something new. Keep an eye out for a tasty morsel of what's to come from the team that brought you the most delicious treat the App store has ever seen.</p>
-                                <footer>
-                                    <ul class="actions">
-                                        <li><a class="button icon alt">Coming soon</a></li>
-                                    </ul>
-                                </footer>
-                            </section>
-                        </div>
+
+                        {% for game in site.games %}
+
+                            {%- include game.html -%}
+
+                        {% endfor %}
+
                     </div>
                 </section>
 
             </div>
-
         </div>
     </div>
 
