@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@font-face
+{
+	font-family: 'GrilledCheese';
+	src: url('webfonts/grilledcheesebtn.eot?v=3.0.1');
+	src: url('webfonts/grilledcheesebtn.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+	     url('webfonts/grilledcheesebtn.woff?v=3.0.1') format('woff'),
+	     url('webfonts/grilledcheesebtn.ttf?v=3.0.1') format('truetype'),
+	     url('webfonts/grilledcheesebtn.svg#FontAwesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
