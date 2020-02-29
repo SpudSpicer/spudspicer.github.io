@@ -44,7 +44,7 @@ section, summary, time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font-family: 'GrilledCheese', sans-serif;
-    font: inherit;
+    font-family: inherit;
     vertical-align: baseline;
 }
 
@@ -120,8 +120,7 @@ html {
 }
 
 body {
-    background: #252122;
-    background-image: url('images/bg02.png');
+    background-color: #252122;
 
     // Stops initial animations until page loads.
     &.is-preload {
@@ -985,7 +984,8 @@ ul.social {
 /* Banner */
 
 #banner {
-    background: #CCE8F4 url('../../images/pic01.jpg');
+    background-color: #CCE8F4;
+    background-image: url('../images/pic01.jpg');
     background-position: center center;
     background-size: auto 100%;
     background-repeat: repeat-x;
@@ -1080,7 +1080,7 @@ ul.social {
 
 #main {
     position: relative;
-    background: #f7f7f7 url('images/bg02.png');
+    background-color: #f7f7f7;
     padding: 0em 0 4em 0;
 
     &:before {
@@ -1089,15 +1089,14 @@ ul.social {
         top: 0;
         left: 0;
         width: 100%;
-        background: url('images/bg01.png');
-        background-size: 100% 100%;
+        background-size: 100%;
         z-index: 0;
         opacity: 0.1;
     }
 
     .major {
         h2 {
-            background: #f7f7f7 url('images/bg02.png');
+            background: #f7f7f7;
         }
     }
 }
@@ -1116,7 +1115,6 @@ ul.social {
         top: 0;
         left: 0;
         width: 100%;
-        background: url('images/bg01.png');
         background-size: 100% 100%;
         z-index: 0;
         opacity: 0.5;
@@ -1432,7 +1430,6 @@ ul.social {
         width: _size(navPanel);
         z-index: _misc(z-index-base) + 2;
         color: #858484;
-        background-image: url('images/bg02.png');
         box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 
         .link {
