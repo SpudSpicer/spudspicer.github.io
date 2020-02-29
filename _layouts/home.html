@@ -4,7 +4,6 @@ layout: default
 
 {%- include header.html -%}
 
-<!-- Main -->
 <section id="main">
     <div class="container">
         <div class="row">
@@ -22,36 +21,13 @@ layout: default
                         <h1 id="team">TEAM</h1>
                     </header>
                     <div class="row">
-                        <div class="col-6 col-12-small">
-                            <section class="box">
-                                <a href="#" class="image featured"><img src="/images/pic08.jpg" alt="" /></a>
-                                <header>
-                                    <h1>RYAN MURPHY</h1>
-                                    <p>CODE</p>
-                                </header>
-                                <p>Ryan writes code. He makes the games work. Just wait till you see his latest creations! We hope you are as excited as we are.</p>
-                                <footer>
-                                    <ul class="actions">
-                                        <li><a target="_blank" href="http://www.ryanscottmurphy.com" class="button icon solid fa-file-alt">WEBSITE</a></li>
-                                    </ul>
-                                </footer>
-                            </section>
-                        </div>
-                        <div class="col-6 col-12-small">
-                            <section class="box">
-                                <a href="#" class="image featured"><img src="/images/pic09.jpg" alt="" /></a>
-                                <header>
-                                    <h1>JARED SPICER</h1>
-                                    <p>ART</p>
-                                </header>
-                                <p>Jared loves to create fun and exciting designs. With SpudSpicer you get to play with these creations. We know you will love them too!</p>
-                                <footer>
-                                    <ul class="actions">
-                                        <li><a target="_blank" href="http://www.jaredspicer.com" class="button icon solid fa-file-alt">WEBSITE</a></li>
-                                    </ul>
-                                </footer>
-                            </section>
-                        </div>
+
+                        {% for staff_member in site.staff_members %}
+
+                            {%- include team.html -%}
+
+                        {% endfor %}
+
                     </div>
                 </section>
 
