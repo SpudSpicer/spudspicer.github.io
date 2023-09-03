@@ -37,7 +37,8 @@ collections:
   games:
     sort_by: feature_order
 
-google_analytics: UA-158824178-1
+google_analytics: 405206119
+gtag: G-EW5LDQ6XM8
 disqus:
   shortname: ryanscottmurphy
 
