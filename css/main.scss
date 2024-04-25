@@ -1020,9 +1020,7 @@ ul.social {
         }
     }
 }
-
 /* Intro */
-
 #intro {
     text-align: center;
     overflow: hidden;
@@ -1098,6 +1096,14 @@ ul.social {
         h2 {
             background: #f7f7f7;
         }
+    }
+
+    p, li {
+        font-size: 1.5em;
+    }
+
+    li {
+        margin-bottom: 15px;
     }
 }
 
